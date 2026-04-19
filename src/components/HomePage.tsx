@@ -1,4 +1,4 @@
-import { Flower2, Leaf, Download, ExternalLink } from "lucide-react";
+import { Flower2, Download, ExternalLink, BookMarked } from "lucide-react";
 import { useNavigate } from "react-router-dom";
 
 const ProfileCard = () => (
@@ -51,7 +51,7 @@ const InfoRow = ({ label, value }: { label: string; value: string }) => (
 const IntroCard = () => (
   <div className="bento-card flex flex-col gap-4 animate-fade-in w-full h-full" style={{ animationDelay: "0.2s" }}>
     <div className="flex items-center gap-2 text-sage opacity-60">
-      <Leaf size={14} strokeWidth={1.2} />
+      <BookMarked size={14} strokeWidth={1.2} />
       <span className="text-[10px] font-body tracking-widest uppercase">Introdução</span>
     </div>
 
@@ -91,16 +91,22 @@ const CTACard = () => {
   const navigate = useNavigate();
 
   return (
-    <div className="bento-card flex flex-col sm:flex-row items-center justify-between gap-6 animate-fade-in" style={{ animationDelay: "0.3s" }}>
-      <p className="font-heading text-xl text-foreground text-center sm:text-left">
+    <div className="bento-card flex flex-col md:flex-row items-center justify-between gap-6 animate-fade-in" style={{ animationDelay: "0.3s" }}>
+      <p className="font-heading text-xl text-foreground text-center md:text-left">
         Curioso sobre o que faço além da sala de aula?
       </p>
-      <div className="flex flex-wrap gap-3 justify-center">
+      <div className="flex flex-wrap items-center gap-3 justify-center md:justify-end w-full md:w-auto">
         <button
           onClick={() => navigate("/portfolio")}
           className="px-6 py-2.5 bg-sage text-primary-foreground font-body text-xs font-medium tracking-widest uppercase rounded-sm transition-all duration-200 hover:bg-primary hover:shadow-md flex-shrink-0"
         >
           Ver Portfólio
+        </button>
+        <button
+          onClick={() => navigate("/visitas")}
+          className="px-6 py-2.5 border border-charcoal-light text-foreground font-body text-xs font-medium tracking-widest uppercase rounded-sm transition-all duration-200 hover:border-sage hover:text-sage flex-shrink-0"
+        >
+          Visitas Técnicas
         </button>
         <button
           onClick={() => navigate("/certificados")}
