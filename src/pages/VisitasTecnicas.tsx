@@ -221,8 +221,8 @@ const VisitasTecnicasPage = () => {
         Visitas Técnicas
       </h2>
       <p className="font-body text-sm text-muted-foreground mb-10">
-        Registros de visitas a instalações e equipamentos ambientais para
-        observação in loco dos processos estudados em sala de aula.
+        Registros de visitas e imersões de campo focadas na observação prática e na 
+        aplicação direta dos conceitos teóricos e processos abordados em sala de aula.
       </p>
 
       {/* Stats */}
