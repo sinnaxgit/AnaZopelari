@@ -22,7 +22,7 @@ const visits: Visit[] = [
     title: "Central de Tratamento de Resíduos — Macaúbas",
     location: "CTR Macaúbas",
     city: "Macaúbas, MG",
-    date: "Ago 2024",
+    date: "Agosto, 2024",
     category: "Resíduos Sólidos",
     categoryColor: "bg-sage-light text-sage border-sage/20",
     description:
@@ -42,7 +42,7 @@ const visits: Visit[] = [
     title: "Caracterização da Região de Belo Horizonte",
     location: "Múltiplos Pontos",
     city: "Belo Horizonte, MG",
-    date: "Jan 2024",
+    date: "Janeiro, 2024",
     category: "Geociências",
     categoryColor: "bg-ochre-light text-ochre border-ochre/20",
     description:

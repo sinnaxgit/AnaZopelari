@@ -21,7 +21,7 @@ const NavigationBar = () => {
           <img src="/logo-black.png" alt="Logo" className="w-8 h-8 sm:w-10 sm:h-10 object-contain" />
           <div className="flex flex-col leading-tight text-center lg:text-left">
             <h1 className="font-heading text-base sm:text-xl font-semibold tracking-wide text-foreground whitespace-nowrap">
-              ANA LUIZA ZOPELARI
+              ANA LUIZA ZOPELARI DE OLIVEIRA
             </h1>
             <span className="font-body text-[10px] sm:text-xs text-muted-foreground tracking-wide">
               Engenharia Ambiental e Sanitária
