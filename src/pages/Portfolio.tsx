@@ -12,6 +12,7 @@ type Activity = {
   docLabel?: string;
   instagramUrl?: string;
   projectUrl?: string;
+  projectLabel?: string;
 };
 
 const activities: Activity[] = [
@@ -35,6 +36,8 @@ const activities: Activity[] = [
     tags: ["Resíduos Sólidos Urbanos", "Catadores", "FAPEMIG", "Pesquisa"],
     color: "bg-ochre-light text-ochre border-ochre/20",
     docUrl: "https://drive.google.com/file/d/1EF50LAstK_a8m-Sk5YBpE2ffqHyWgPPL/view?usp=drive_link",
+    projectUrl: "https://fapemig.br/",
+    projectLabel: "Site FAPEMIG",
   },
   {
     icon: BookOpen,
@@ -96,7 +99,7 @@ const PortfolioPage = () => {
                   ))}
                 </div>
 
-                <div className="flex flex-col gap-2">
+                <div className="flex flex-col gap-2 min-h-[90px] justify-end">
                   <a
                     href={activity.docUrl || "#"}
                     target="_blank"
@@ -118,7 +121,7 @@ const PortfolioPage = () => {
                       className="flex items-center justify-center gap-2 w-full px-4 py-2.5 text-xs font-body font-medium tracking-widest uppercase rounded-sm border border-sage text-sage hover:bg-sage-light transition-all duration-200"
                     >
                       <ExternalLink size={13} strokeWidth={1.5} />
-                      Ver Projeto
+                      {activity.projectLabel || "Ver Projeto"}
                     </a>
                   )}
                   {activity.instagramUrl && (
