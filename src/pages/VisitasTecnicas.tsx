@@ -19,14 +19,14 @@ type Visit = {
 const visits: Visit[] = [
   {
     id: 1,
-    title: "Central de Tratamento de Resíduos — Macaúbas",
-    location: "CTR Macaúbas",
-    city: "Macaúbas, MG",
+    title: "Central de Tratamento de Resíduos — Sabará",
+    location: "CTR Sabará",
+    city: "Sabará, MG",
     date: "Agosto, 2024",
     category: "Resíduos Sólidos",
     categoryColor: "bg-sage-light text-sage border-sage/20",
     description:
-      "Visita técnica ao aterro sanitário e à Central de Tratamento de Resíduos de Macaúbas, com foco nos processos operacionais de disposição final de resíduos sólidos urbanos. A atividade proporcionou uma visão prática sobre a gestão integrada de resíduos, incluindo coleta, triagem, compostagem e disposição final em conformidade com a Política Nacional de Resíduos Sólidos (PNRS).",
+      "Visita técnica ao aterro sanitário e à Central de Tratamento de Resíduos de Sabará, com foco nos processos operacionais de disposição final de resíduos sólidos urbanos. A atividade proporcionou uma visão prática sobre a gestão integrada de resíduos, incluindo coleta, triagem, compostagem e disposição final em conformidade com a Política Nacional de Resíduos Sólidos (PNRS).",
     highlights: [
       "Técnicas de disposição e compactação de resíduos",
       "Sistemas de drenagem de chorume e biogás",
@@ -34,8 +34,8 @@ const visits: Visit[] = [
       "Políticas locais de gestão de RSU",
     ],
     image: "/Visitas01.jpeg",
-    imageAlt: "Central de Tratamento de Resíduos de Macaúbas",
-    docUrl: "https://drive.google.com/file/d/1peLUN0TRKKkA-PAgTe7uU8pBFwchn2kY/view?usp=sharing",
+    imageAlt: "Central de Tratamento de Resíduos de Sabará",
+    docUrl: "https://drive.google.com/file/d/1N-uxtkkQU3zU745KOdWy3-jy4tsbkkg3/view?usp=drive_link",
   },
   {
     id: 2,

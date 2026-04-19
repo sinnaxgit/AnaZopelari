@@ -35,7 +35,7 @@ const categories: Category[] = [
       { title: "SEMINÁRIO: Valoração dos Serviços Ecossistêmicos", date: "Nov 2025", hours: "4h", url: "https://drive.google.com/open?id=1ey3LaCgUPb6-xaGJbf0PjGuBXFVHgZVH" },
       { title: "Simpósio Ambiental para Ação Climática", date: "Jun 2024", hours: "6h", url: "https://drive.google.com/open?id=1EqNPkqv2VYesRr023NG6yFOEWT6W98ck" },
       { title: "DIA MUNDIAL DO MEIO AMBIENTE: A Geografia e a Análise de Riscos", date: "Jun 2024", hours: "3h", url: "https://drive.google.com/open?id=1pYRmCOHGBzUAhGdDXCVB_9g6kQtNeXBI" },
-      { title: "Visita Técnica: Central de Tratamento de Resíduos Macaúbas", date: "Ago 2024", hours: "3h30m", url: "https://drive.google.com/open?id=1peLUN0TRKKkA-PAgTe7uU8pBFwchn2kY" },
+      { title: "Visita Técnica: Central de Tratamento de Resíduos Sabará", date: "Ago 2024", hours: "3h30m", url: "https://drive.google.com/file/d/1N-uxtkkQU3zU745KOdWy3-jy4tsbkkg3/view?usp=drive_link" },
       { title: "A construção coletiva da coleta seletiva em São Paulo", date: "Out 2025", hours: "1h30m", url: "https://drive.google.com/open?id=1hu0bX-6hOK7SQ_3R7UO7_3HW0mHhayYz" },
       { title: "Interdisciplinaridade em Avaliação Ambiental Estratégica", date: "Out 2021", hours: "1h", url: "https://drive.google.com/open?id=15HYT3ecjOZu2ajLK64FL0LVSIOGbXmLM" },
     ],
