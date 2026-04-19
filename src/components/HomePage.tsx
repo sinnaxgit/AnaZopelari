@@ -104,13 +104,13 @@ const CTACard = () => {
         </button>
         <button
           onClick={() => navigate("/visitas")}
-          className="w-full md:w-auto px-6 py-2.5 border border-charcoal-light text-foreground font-body text-xs font-medium tracking-widest uppercase rounded-sm transition-all duration-200 hover:border-sage hover:text-sage flex-shrink-0"
+          className="w-full md:w-auto px-6 py-2.5 bg-sage text-primary-foreground font-body text-xs font-medium tracking-widest uppercase rounded-sm transition-all duration-200 hover:bg-primary hover:shadow-md flex-shrink-0"
         >
           Visitas Técnicas
         </button>
         <button
           onClick={() => navigate("/certificados")}
-          className="w-full md:w-auto px-6 py-2.5 border border-charcoal-light text-foreground font-body text-xs font-medium tracking-widest uppercase rounded-sm transition-all duration-200 hover:border-sage hover:text-sage flex-shrink-0"
+          className="w-full md:w-auto px-6 py-2.5 bg-sage text-primary-foreground font-body text-xs font-medium tracking-widest uppercase rounded-sm transition-all duration-200 hover:bg-primary hover:shadow-md flex-shrink-0"
         >
           Certificados
         </button>
