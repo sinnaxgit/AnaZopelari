@@ -4,6 +4,7 @@ const tabs = [
   { label: "INÍCIO", path: "/" },
   { label: "PORTFÓLIO", path: "/portfolio" },
   { label: "CERTIFICADOS", path: "/certificados" },
+  { label: "VISITAS TÉCNICAS", path: "/visitas" },
   { label: "CURRÍCULO", path: "/curriculo" },
 ];
 
@@ -13,14 +14,14 @@ const NavigationBar = () => {
 
   return (
     <header className="w-full border-b border-charcoal-light sticky top-0 z-50 bg-card/80 backdrop-blur-sm">
-      <div className="max-w-5xl mx-auto px-4 sm:px-6 py-3 flex flex-col items-center gap-2 sm:flex-row sm:justify-between sm:gap-4">
+      <div className="max-w-6xl mx-auto px-4 md:px-6 py-3 flex flex-col items-center gap-3 lg:flex-row lg:justify-between lg:gap-4">
 
         {/* Nome e curso */}
         <div className="flex items-center gap-3">
           <img src="/logo-black.png" alt="Logo" className="w-8 h-8 sm:w-10 sm:h-10 object-contain" />
-          <div className="flex flex-col leading-tight text-center sm:text-left">
+          <div className="flex flex-col leading-tight text-center lg:text-left">
             <h1 className="font-heading text-base sm:text-xl font-semibold tracking-wide text-foreground whitespace-nowrap">
-              ANA LUIZA ZOPELARI DE OLIVEIRA
+              ANA LUIZA ZOPELARI
             </h1>
             <span className="font-body text-[10px] sm:text-xs text-muted-foreground tracking-wide">
               Engenharia Ambiental e Sanitária
@@ -29,7 +30,7 @@ const NavigationBar = () => {
         </div>
 
         {/* Navegação — scroll horizontal no mobile */}
-        <nav className="flex gap-0.5 overflow-x-auto w-full sm:w-auto pb-0.5 sm:pb-0 justify-center sm:justify-end">
+        <nav className="flex gap-0.5 overflow-x-auto w-full lg:w-auto pb-1 lg:pb-0 justify-start sm:justify-center lg:justify-end">
           {tabs.map((tab) => {
             const isActive = location.pathname === tab.path;
             return (

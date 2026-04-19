@@ -3,8 +3,8 @@ import { useLocation } from "react-router-dom";
 const FloralBackground = () => {
   const { pathname } = useLocation();
 
-  // Esconder nas abas de portfólio e certificados
-  if (pathname === "/portfolio" || pathname === "/certificados") {
+  // Esconder nas abas de portfólio, certificados e visitas
+  if (pathname === "/portfolio" || pathname === "/certificados" || pathname === "/visitas") {
     return null;
   }
 

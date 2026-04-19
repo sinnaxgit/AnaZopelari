@@ -8,6 +8,7 @@ import Portfolio from "./pages/Portfolio.tsx";
 import Certificados from "./pages/Certificados.tsx";
 import Curriculo from "./pages/Curriculo.tsx";
 import NotFound from "./pages/NotFound.tsx";
+import VisitasTecnicas from "./pages/VisitasTecnicas.tsx";
 import NavigationBar from "./components/NavigationBar.tsx";
 import FloralBackground from "./components/FloralBackground.tsx";
 
@@ -34,6 +35,13 @@ const CurriculoPage = () => (
   </div>
 );
 
+const VisitasTecnicasPage = () => (
+  <div className="min-h-screen paper-texture relative z-10">
+    <NavigationBar />
+    <VisitasTecnicas />
+  </div>
+);
+
 const App = () => (
   <QueryClientProvider client={queryClient}>
     <TooltipProvider>
@@ -46,6 +54,7 @@ const App = () => (
           <Route path="/portfolio" element={<PortfolioPage />} />
           <Route path="/certificados" element={<CertificadosPage />} />
           <Route path="/curriculo" element={<CurriculoPage />} />
+          <Route path="/visitas" element={<VisitasTecnicasPage />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
       </BrowserRouter>
