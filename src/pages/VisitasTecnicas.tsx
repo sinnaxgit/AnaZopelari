@@ -42,7 +42,7 @@ const visits: Visit[] = [
     title: "Caracterização da Região de Belo Horizonte",
     location: "Múltiplos Pontos",
     city: "Belo Horizonte, MG",
-    date: "2024",
+    date: "Jan 2024",
     category: "Geociências",
     categoryColor: "bg-ochre-light text-ochre border-ochre/20",
     description:
