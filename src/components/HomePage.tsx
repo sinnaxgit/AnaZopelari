@@ -1,10 +1,10 @@
-import { Droplets, Leaf, Download, ExternalLink } from "lucide-react";
+import { Flower2, Leaf, Download, ExternalLink } from "lucide-react";
 import { useNavigate } from "react-router-dom";
 
 const ProfileCard = () => (
   <div className="bento-card flex flex-col items-center text-center gap-4 animate-fade-in w-full h-full" style={{ animationDelay: "0.1s" }}>
     <div className="flex items-center gap-2 self-start text-sage opacity-60">
-      <Droplets size={14} strokeWidth={1.2} />
+      <Flower2 size={16} strokeWidth={1.8} />
       <span className="text-[10px] font-body tracking-widest uppercase">Perfil</span>
     </div>
 
