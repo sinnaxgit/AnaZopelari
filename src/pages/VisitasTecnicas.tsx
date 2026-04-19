@@ -1,4 +1,4 @@
-import { MapPin, Calendar, Building2, ChevronRight, X } from "lucide-react";
+import { MapPin, Footprints, Calendar, Building2, ChevronRight, X } from "lucide-react";
 import { useState } from "react";
 
 type Visit = {
@@ -211,7 +211,7 @@ const VisitasTecnicasPage = () => {
     <div className="max-w-5xl mx-auto px-6 py-10">
       {/* Header */}
       <div className="flex items-center gap-2 mb-8 text-sage opacity-60">
-        <MapPin size={14} strokeWidth={1.2} />
+        <Footprints size={14} strokeWidth={1.2} />
         <span className="text-[10px] font-body tracking-widest uppercase">
           Campo &amp; Prática
         </span>
