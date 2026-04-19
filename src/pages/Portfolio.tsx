@@ -82,55 +82,57 @@ const PortfolioPage = () => {
               </div>
 
               <h3 className="font-heading text-xl font-semibold text-foreground leading-snug">{activity.title}</h3>
-              <p className="font-body text-sm text-muted-foreground leading-relaxed flex-1">{activity.description}</p>
+              <p className="font-body text-sm text-muted-foreground leading-relaxed">{activity.description}</p>
 
-              <div className="flex flex-wrap gap-2 pt-2 border-t border-charcoal-light">
-                {activity.tags.map((tag) => (
-                  <span
-                    key={tag}
-                    className={`px-3 py-1 text-[10px] font-body tracking-wider uppercase rounded-sm border ${activity.color}`}
-                  >
-                    {tag}
-                  </span>
-                ))}
-              </div>
+              <div className="mt-auto flex flex-col gap-4">
+                <div className="flex flex-wrap gap-2 pt-4 border-t border-charcoal-light">
+                  {activity.tags.map((tag) => (
+                    <span
+                      key={tag}
+                      className={`px-3 py-1 text-[10px] font-body tracking-wider uppercase rounded-sm border ${activity.color}`}
+                    >
+                      {tag}
+                    </span>
+                  ))}
+                </div>
 
-              <div className="mt-auto flex flex-col gap-2">
-                <a
-                  href={activity.docUrl || "#"}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className={`flex items-center justify-center gap-2 w-full px-4 py-2.5 text-xs font-body font-medium tracking-widest uppercase rounded-sm border transition-all duration-200 ${activity.docUrl
-                    ? "bg-primary text-primary-foreground border-primary hover:opacity-90"
-                    : "bg-transparent text-muted-foreground border-charcoal-light cursor-not-allowed opacity-50"
-                    }`}
-                  onClick={(e) => !activity.docUrl && e.preventDefault()}
-                >
-                  <ExternalLink size={13} strokeWidth={1.5} />
-                  {activity.docLabel || "Ver Certificado"}
-                </a>
-                {activity.projectUrl && (
+                <div className="flex flex-col gap-2">
                   <a
-                    href={activity.projectUrl}
+                    href={activity.docUrl || "#"}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="flex items-center justify-center gap-2 w-full px-4 py-2.5 text-xs font-body font-medium tracking-widest uppercase rounded-sm border border-sage text-sage hover:bg-sage-light transition-all duration-200"
+                    className={`flex items-center justify-center gap-2 w-full px-4 py-2.5 text-xs font-body font-medium tracking-widest uppercase rounded-sm border transition-all duration-200 ${activity.docUrl
+                      ? "bg-primary text-primary-foreground border-primary hover:opacity-90"
+                      : "bg-transparent text-muted-foreground border-charcoal-light cursor-not-allowed opacity-50"
+                      }`}
+                    onClick={(e) => !activity.docUrl && e.preventDefault()}
                   >
                     <ExternalLink size={13} strokeWidth={1.5} />
-                    Ver Projeto
+                    {activity.docLabel || "Ver Certificado"}
                   </a>
-                )}
-                {activity.instagramUrl && (
-                  <a
-                    href={activity.instagramUrl}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="flex items-center justify-center gap-2 w-full px-4 py-2.5 text-xs font-body font-medium tracking-widest uppercase rounded-sm border border-charcoal-light text-muted-foreground hover:border-sage hover:text-sage transition-all duration-200"
-                  >
-                    <Instagram size={13} strokeWidth={1.5} />
-                    Instagram
-                  </a>
-                )}
+                  {activity.projectUrl && (
+                    <a
+                      href={activity.projectUrl}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="flex items-center justify-center gap-2 w-full px-4 py-2.5 text-xs font-body font-medium tracking-widest uppercase rounded-sm border border-sage text-sage hover:bg-sage-light transition-all duration-200"
+                    >
+                      <ExternalLink size={13} strokeWidth={1.5} />
+                      Ver Projeto
+                    </a>
+                  )}
+                  {activity.instagramUrl && (
+                    <a
+                      href={activity.instagramUrl}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="flex items-center justify-center gap-2 w-full px-4 py-2.5 text-xs font-body font-medium tracking-widest uppercase rounded-sm border border-charcoal-light text-muted-foreground hover:border-sage hover:text-sage transition-all duration-200"
+                    >
+                      <Instagram size={13} strokeWidth={1.5} />
+                      Instagram
+                    </a>
+                  )}
+                </div>
               </div>
             </div>
           );
