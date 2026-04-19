@@ -1,5 +1,5 @@
 import { type ReactNode, type ElementType } from "react";
-import { Briefcase, Heart, Recycle, ExternalLink, BookOpen, Instagram } from "lucide-react";
+import { Briefcase, PawPrint, Trash2, ExternalLink, Droplet, Instagram } from "lucide-react";
 
 type Activity = {
   icon: ElementType;
@@ -17,7 +17,7 @@ type Activity = {
 
 const activities: Activity[] = [
   {
-    icon: Heart,
+    icon: PawPrint,
     title: "Patas Acadêmicas — CEFET-MG",
     type: "Extensão Universitária",
     description:
@@ -29,7 +29,7 @@ const activities: Activity[] = [
     instagramUrl: "https://www.instagram.com/patasacademicas?igsh=YmtocmVmY3pjM24w",
   },
   {
-    icon: Recycle,
+    icon: Trash2,
     title: "Iniciação Científica — CEFET-MG",
     type: "Iniciação Científica",
     description: <>Pesquisa voltada ao estudo dos catadores de materiais recicláveis no contexto da gestão de resíduos sólidos urbanos. O trabalho analisa as condições socioeconômicas desses trabalhadores, os desafios enfrentados no exercício da atividade e o papel fundamental que desempenham na cadeia da reciclagem e na promoção da sustentabilidade urbana. A pesquisa está vinculada aos projetos <em>Mineração Urbana</em> e <em>Casa Verde Sustentável</em>, ambos financiados pela Fundação de Amparo à Pesquisa do Estado de Minas Gerais. Como produto, busca-se desenvolver uma cartilha informativa, com o objetivo de dar visibilidade aos catadores, valorizar seu trabalho e contribuir para a conscientização da sociedade sobre sua importância.</>,
@@ -40,7 +40,7 @@ const activities: Activity[] = [
     projectLabel: "Site FAPEMIG",
   },
   {
-    icon: BookOpen,
+    icon: Droplet,
     title: "Projeto ECOAR — CEFET-MG",
     type: "Extensão Universitária",
     description: "Participação como voluntária no Projeto ECOAR, coordenado pela Prof.ª Lilia Maria de Oliveira, no Departamento de Ciência e Tecnologia Ambiental do CEFET-MG, com orientação da Dra. Elizabeth Halfeld. O projeto integra educação ambiental e cidadania no contexto do tratamento da água, com foco na conscientização de estudantes sobre a importância dos processos de saneamento. As atividades foram desenvolvidas entre março e agosto de 2025, totalizando 60 horas. Como parte do projeto, foi desenvolvido um protótipo didático baseado no Rio das Velhas, representando as etapas do tratamento de água de forma visual e acessível. O material foi utilizado em ações educativas com alunos do 9º ano do Ensino Fundamental do Colégio Logosófico González Pecotche, contribuindo para a compreensão prática dos processos envolvidos e para a formação de uma consciência ambiental mais crítica.",
