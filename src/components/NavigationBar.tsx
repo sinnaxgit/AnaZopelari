@@ -17,7 +17,7 @@ const NavigationBar = () => {
 
         {/* Nome e curso */}
         <div className="flex items-center gap-3">
-          <img src="/Logo%20Black.png" alt="Logo" className="w-8 h-8 sm:w-10 sm:h-10 object-contain" />
+          <img src="/logo-black.png" alt="Logo" className="w-8 h-8 sm:w-10 sm:h-10 object-contain" />
           <div className="flex flex-col leading-tight text-center sm:text-left">
             <h1 className="font-heading text-base sm:text-xl font-semibold tracking-wide text-foreground whitespace-nowrap">
               ANA LUIZA ZOPELARI DE OLIVEIRA
