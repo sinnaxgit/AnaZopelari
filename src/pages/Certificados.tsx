@@ -24,6 +24,7 @@ const categories: Category[] = [
     borderClass: "border-sage/30",
     iconClass: "text-sage",
     certs: [
+      { title: "Química Ambiental", date: "Abr 2026", hours: "30h", url: "https://drive.google.com/file/d/1OEfQzM_zwM8bLWKW2-CJndqaNfMK7T5u/view?usp=drive_link" },
       { title: "Gerenciamento de Resíduos", date: "Set 2025", hours: "60h", url: "https://drive.google.com/open?id=1w47yo8Zwv0TfBNL5HAEprpCvkQGnObFs" },
       { title: "Conservação Ambiental", date: "Set 2025", hours: "60h", url: "https://drive.google.com/open?id=1NcpVRveH7V-1QBuBQdbvPaUMkd7S66O6" },
       { title: "Recomposição de Áreas Degradadas para o Bioma Cerrado", date: "Out 2025", hours: "48h", url: "https://drive.google.com/open?id=1vKOz5sgx6rYpkLyKpUHFWMC7m6CGGUFN" },
@@ -77,7 +78,7 @@ const categories: Category[] = [
   },
 ];
 
-const totalHours = 749;
+const totalHours = 779;
 
 const CertificadosPage = () => {
   return (
